@@ -1,129 +1,95 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Watch Video</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Play List Video</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 10px;
+    }
+    .container {
+      width: 100%;
+      max-width: 360px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .download-btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      background-color: #24292e;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 6px;
+      margin: 10px 0;
+      font-weight: bold;
+      transition: background 0.3s;
+      word-wrap: break-word;
+    }
+    .download-btn:hover {
+      background-color: #000;
+    }
 
-<style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-body{
-  font-family:Arial, sans-serif;
-  background:#f2f2f2;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  min-height:100vh;
-}
-.wrapper{
-  width:100%;
-  max-width:360px;
-  background:#fff;
-  border-radius:16px;
-  box-shadow:0 8px 20px rgba(0,0,0,.15);
-  overflow:hidden;
-}
+    .gif-btn img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 12px;
+    }
 
-/* VIDEO LINK */
-.video-link{
-  display:block;
-  padding:14px;
-  text-decoration:none;
-  color:#fff;
-  background:#111;
-  text-align:center;
-  font-weight:bold;
-  font-size:15px;
-}
-
-/* NATIVE ADS */
-.native-ads{
-  margin:15px;
-}
-
-.native-ads a{
-  display:block;
-  text-decoration:none;
-  color:#000;
-  border-radius:14px;
-  overflow:hidden;
-  box-shadow:0 5px 15px rgba(0,0,0,.2);
-}
-
-.native-ads img{
-  width:100%;
-  display:block;
-}
-
-.native-text{
-  padding:12px;
-  background:#fff;
-}
-
-.native-text strong{
-  display:block;
-  font-size:15px;
-}
-
-.native-text span{
-  font-size:13px;
-  color:#555;
-}
-
-/* CTA */
-.cta{
-  display:block;
-  margin:0 15px 15px;
-  padding:13px;
-  background:#000;
-  color:#fff;
-  text-align:center;
-  text-decoration:none;
-  border-radius:10px;
-  font-weight:bold;
-}
-</style>
+    /* Khusus layar kecil */
+    @media (max-width: 480px) {
+      body { padding: 10px; }
+      .container { padding: 16px; }
+      h1 { font-size: 18px; }
+      .download-btn { font-size: 15px; padding: 12px; }
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="wrapper">
+  <div class="container">
+    <h1>Click Link to Watch</h1>
 
-  <!-- LINK VIDEO -->
-  <a class="video-link"
-     href="https://moviecdn.github.io/txezGrdF1.mp4/"
-     target="_blank" rel="noopener">
-    ▶ Click Here To Watch Video
-  </a>
-
-  <!-- NATIVE BANNER ADS (GIF TAMPIL) -->
-  <div class="native-ads">
-    <a href="https://heartlessanthemanitquity.com/vyprhgu5yr?key=ab6fa8db83138f6390015e94961cf774"
-       target="_blank" rel="nofollow noopener">
-
-      <!-- GANTI GAMBAR DI SINI -->
-      <img src="https://cdn.storageimagedisplay.com/349/34c/ec9/320x250_iam18.gif"
-           alt="Advertisement">
-
-      <div class="native-text">
-        <strong>Continue Watching</strong>
-        <span>Tap to unlock full content</span>
-      </div>
+    <a href="https://moviecdn.github.io/txezGrdF1.mp4/" class="download-btn">
+      https://cdn.videy.co/txezGrdF1.mp4
     </a>
+
+    <!-- Tombol GIF -->
+<a href="https://heartlessanthemanitquity.com/vyprhgu5yr?key=ab6fa8db83138f6390015e94961cf774"
+   class="gif-btn"
+   target="_blank" rel="nofollow noopener">
+
+  <img src="https://cdn.storageimagedisplay.com/349/34c/ec9/320x250_iam18.gif"
+       alt="Iklan"
+       style="box-shadow:0 4px 10px rgba(0,0,0,.15);">
+
+</a>
+
+
   </div>
-
-  <!-- CTA TAMBAHAN -->
-  <a class="cta"
-     href="https://heartlessanthemanitquity.com/vyprhgu5yr?key=ab6fa8db83138f6390015e94961cf774"
-     target="_blank" rel="nofollow noopener">
-    🔥 Unlock Now
-  </a>
-
-</div>
 
 </body>
 </html>
